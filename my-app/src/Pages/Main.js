@@ -10,7 +10,7 @@ import SEO from '../Components/SEO';
 export default function Main() {
     const [posts,setPosts] = useState([]);
     useEffect(() => {
-      fetch('http://localhost:4000/post').then(response => {
+      fetch('https://blakconscience.herokuapp.com/').then(response => {
         response.json().then(posts => {
           setPosts(posts);
         });
