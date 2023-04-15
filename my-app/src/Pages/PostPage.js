@@ -23,7 +23,7 @@ const {
   } = useAuth0();
 
     useEffect(() => {
-      fetch(`http://localhost:4000/post/${id}`).then(response => {
+      fetch(`https://blakconscience.herokuapp.com/${id}`).then(response => {
             response.json().then(postInfo => {
               setPostInfo(postInfo);
             
