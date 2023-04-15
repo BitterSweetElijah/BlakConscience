@@ -23,7 +23,7 @@ export default function Search ()  {
     e.preventDefault()
     console.log("Options Fetched from API")
  
-    fetch(`http://localhost:4000/post`).then(response => {
+    fetch(`https://blakconscience.herokuapp.com/post`).then(response => {
       response.json().then(posts => {
         setPosts(posts.filter(posts => posts.tag === text));
         
